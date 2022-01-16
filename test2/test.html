@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+
+    }
+
+    div {
+      margin: 0 auto;
+    }
+
+    .a {
+      text-align: center;
+    }
+
+    .b {
+      /* outline: 1px solid black; */
+      width: 100%;
+
+    }
+
+    .c {
+      /* outline: 1px solid black; */
+      width: 80%;
+      text-align: right;
+    }
+
+    .d {
+      width: 100%;
+    }
+
+    .e {
+      width: 80%;
+    }
+
+    .e input {
+      width: 85%;
+    }
+
+    .f {
+      width: 100%;
+    }
+
+    .g {
+      width: 80%;
+      text-align: left;
+    }
+
+    .g a {
+      margin-right: 10px;
+    }
+
+    .m{
+      width: 100%;
+      height: 65px;
+    }
+
+    .menu input[type=checkbox] {
+      display: none;
+    }
+    .menu input[type=checkbox]+label {
+      padding-left: 25px; 
+      background-repeat: no-repeat;
+    }
+    .menu input[type=checkbox]+label>span {
+      font-weight: bold;
+    }
+    .menu{
+      width: 100%;
+      height: 10px;
+      background-color: black;
+      text-align: center;
+
+      
+    }
+
+    .menu .menuitems {
+      margin: 0;
+      background-color: black;
+      
+      width: 100%;
+      list-style: none;
+      display: none;
+    }
+
+    .menu .menuitems li {
+     
+      
+      padding: 5px;
+      /* border-bottom: 1px solid #ccc; */
+      display: inline-block;
+      width: 100px;
+      line-height: 50px;
+      position: relative; 
+    }
+
+    .menu .menuitems li a {
+      text-decoration: none;
+      color: white;
+      font-weight : bold;
+      font-size: 0.8rem; 
+      
+    }
+
+    .menu input[type=checkbox]:checked~.menuitems {
+      display: block;
+    }
+
+
+    .star-ratings {
+  color: #aaa9a9; 
+  position: relative;
+  unicode-bidi: bidi-override;
+  width: max-content;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-color: #2b2a29;
+}
+ 
+.star-ratings-fill {
+  color: #fff58c;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  -webkit-text-fill-color: gold;
+}
+ 
+.star-ratings-base {
+  z-index: 0;
+  padding: 0;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  justify-content: space-around;
+  padding: 0 0.2em;
+  text-align: center;
+  width: 5em;
+}
+ 
+.star-rating input {
+  display: none;
+}
+ 
+.star-rating label {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2.3px;
+  -webkit-text-stroke-color: #2b2a29;
+  cursor: pointer;
+}
+ 
+.star-rating :checked ~ label {
+  -webkit-text-fill-color: gold;
+}
+ 
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  -webkit-text-fill-color: #fff58c;
+}
+
+.main{
+  
+  outline: 1px solid red;
+  width: 100%;
+  height: 200px;
+}
+.main .sub{
+  
+  outline: 1px solid black;
+  width: 80%;
+  height: 100%;
+}
+.main .sub .data{
+  float: left;
+  outline: 1px solid blue;
+  width: 33%;
+  height: 100%;
+}
+
+.main .sub .data .img{
+  outline: 1px solid blueviolet;
+   float: left;
+  width: 50%;
+  height: 80%;
+}
+
+.main .sub .data .content{  
+  float: left;
+  width: 50%;
+  height: 80%;
+}
+.main .sub .data li{
+  list-style:none;
+}
+.main .sub .data .name{
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+@media (max-width: 600px) {
+      .menu{
+        display: none;
+      }
+    }
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="kim">
+    <div class="a">
+      <h3><a href="#">카페 홍길동</a></h3>
+    </div>
+    <div class="b">
+      <div class="c">
+        <span><a href="#">회원가입</a></span><span>|</span><span><a href="#">로그인</a></span>
+      </div>
+    </div>
+    <div class="d">
+      <div class="e">
+        <input type="text"> <button>검색</button> <button class="detail">상세</button>
+      </div>
+    </div>
+    <div class="f">
+      <div class="g">
+        <a href="#">아메리카노</a><a href="#">통유리</a>
+      </div>
+    </div>
+    <div class="m">
+      <div class="menu">
+        <input type="checkbox" class="메뉴체크" id="collapsible">
+        <!-- <label for="collapsible"><span></span></label> -->
+        <ul id="menuitems" class="menuitems">
+          <li class="dropdown">
+            <a href="#">지역</a>
+            <div class="dropdown-content">
+              <p>서울</p>
+              <p>부산</p>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">제품</a>
+            <div class="dropdown-content">
+              <p>서울</p>
+              <p>부산</p>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">다운로드</a>
+            <div class="dropdown-content">
+              <p>서울</p>
+              <p>부산</p>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">게시판</a>
+            <div class="dropdown-content">
+              <p>서울</p>
+              <p>부산</p>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">오시는길</a>
+            <div class="dropdown-content">
+              <p>서울</p>
+              <p>부산</p>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">문의</a>
+            <div class="dropdown-content">
+              <p>서울</p>
+              <p>부산</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+   
+    <div class="main">
+      <div class="sub">
+        <div class="data">        
+          <div class="img">
+            <img src="/media/4장/media/spongebob.png" width="100%" height="100%"> 
+          </div>
+          <div class="content">
+            <li><a href="">평점</a></li>
+            <li><a href="">거리</a></li>
+            <li><a href="">등록일</a></li>
+          </div>  
+          <div class="name">
+            <li><a href="">카페홍길동</a></li>
+          </div>    
+        </div>      
+        
+      </div>
+    </div>
+    
+    
+    <div class="star-ratings">
+      <div 
+        class="star-ratings-fill space-x-2 text-lg"
+        :style="{ width: ratingToPercent + '%' }"
+      >
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+      <div class="star-ratings-base space-x-2 text-lg">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+    </div>
+
+
+    <div class="star-rating space-x-4 mx-auto">
+      <input type="radio" id="5-stars" name="rating" value="5" v-model="ratings"/>
+      <label for="5-stars" class="star pr-4">★</label>
+      <input type="radio" id="4-stars" name="rating" value="4" v-model="ratings"/>
+      <label for="4-stars" class="star">★</label>
+      <input type="radio" id="3-stars" name="rating" value="3" v-model="ratings"/>
+      <label for="3-stars" class="star">★</label>
+      <input type="radio" id="2-stars" name="rating" value="2" v-model="ratings"/>
+      <label for="2-stars" class="star">★</label>
+      <input type="radio" id="1-star" name="rating" value="1" v-model="ratings" />
+      <label for="1-star" class="star">★</label>
+    </div>
+
+
+
+
+  </div><!-- class="kim" -->
+
+  <script>
+
+    const $kim = document.querySelector('.kim');
+
+    $kim?.addEventListener('click', click_f, true);
+    const $detail = document.querySelector('.detail');
+    const $메뉴체크 = document.querySelector('.메뉴체크');
+   
+   
+    function click_f(evt) {
+      if (evt.target.matches('.detail')) {
+        // console.log($메뉴체크.checked);
+
+        if ($메뉴체크.checked == true) {        
+          $detail.addEventListener('click', (evt) => {
+            $메뉴체크.checked = false;
+          });
+          console.log('닫다');
+
+        } else if ($메뉴체크.checked == false) {
+          $detail.addEventListener('click', (evt) => {
+            $메뉴체크.checked = true;
+          });
+          console.log('열다');
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

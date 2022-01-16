@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> -->
+    <head>
+        <meta name="_csrf_parameter" content="_csrf"><meta name="_csrf_header" content="X-CSRF-TOKEN"><meta name="_csrf" content="bab33bc0-eae8-4e12-bd04-5122492c8e2a">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="apple-mobile-web-app-capable" content="no">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="author" content="HRD">
+        <meta name="robots" content="all">
+        <meta name="keywords" content="HRD">
+        <meta name="description" content="내일배움카드제, 근로자직무능력향상훈련, 기업체 지원훈련, 일학습병행, 전국 훈련기관.">
+        <meta http-equiv="Expires" content="-1">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="No-cache">        
+        <title>국민내일배움카드 훈련과정 | HRD-Net</title>
+        
+        <!-- new 추가 -->
+        <link rel="shortcut icon" href="/new_images/common/favicon.ico">
+        <!-- <link href="/new_css/lib/swiper.css" rel="stylesheet"> -->
+                        
+        <link href="/new_css/pro.css" rel="stylesheet">               
+        
+        
+        
+            <link rel="shortcut icon" href="/new_images/common/favicon.ico">
+            <link href="/new_css/lib/jquery-ui.css" rel="stylesheet">
+            <link href="/new_css/lib/swiper.min.css" rel="stylesheet">
+            <link href="/new_css/lib/daterangepicker.css" rel="stylesheet">
+            <link href="/new_css/reset.css" rel="stylesheet">
+            <link href="/new_css/layout.css" rel="stylesheet">
+            <link href="/new_css/contents.css?ver=9" rel="stylesheet">
+            <link href="/new_css/main.css?ver=4" rel="stylesheet">
+            <link href="/new_css/front.css?ver=3" rel="stylesheet">
+            <link href="/new_css/myservice.css?ver=3" rel="stylesheet">
+            <script src="/new_js/lib/jquery-2.1.1.js"></script>
+            <script src="/new_js/lib/jquery-ui.js"></script>
+            <script src="/new_js/lib/moment.min.js"></script>
+            <script src="/new_js/lib/daterangepicker.js"></script>
+            <script src="/new_js/lib/swiper.min.js"></script>
+            <script src="/new_js/ui.js"></script>
+            <link href="/new_css/contents2.css" rel="stylesheet">
+        
+        
+            <link href="/new_css/renewalHeader.css?ver=0" rel="stylesheet" type="text/css">
+        
+        
+        
+        <!-- new 추가  END-->
+        <script type="text/javascript">
+            var gfv_contextpath = "";
+        </script>
+        
+        <script type="text/javascript" src="/js/lib/jquery-1.9.0.js"></script>
+        <script type="text/javascript" src="/js/lib/jquery-ui.js"></script>
+        
+        <script type="text/javascript" src="/js/lib/jquery.easing.1.3.min.js"></script>
+        <script type="text/javascript" src="/js/lib/jquery-ui-multiselect/src/jquery.multiselect.js"></script>
+        <script type="text/javascript" src="/js/lib/jquery-asPieProgress.js"></script><!-- svg pie chart -->
+        <script type="text/javascript" src="/js/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+        <script type="text/javascript" src="/js/lib/slick.min.js"></script>
+        
+        <!-- 웹접근성 개선 180501 추가 -->
+        
+        
+        
+        
+        
+        
+        <script type="text/javascript" src="/js/lib/jquery.form.js"></script>
+        <script type="text/javascript" src="/js/lib/validation/jquery.validate.js"></script>
+        <script type="text/javascript" src="/js/lib/validation/additional-methods.js"></script>
+        <script type="text/javascript" src="/js/lib/validation/messages_ko.js"></script>
+        
+        <script type="text/javascript" src="/js/lib/trimpath-template-1.0.38.js"></script>
+        
+        
+        
+        <script type="text/javascript" src="/js/comm/common.js"></script>
+        <script type="text/javascript" src="/js/comm/dateUtils.js"></script>
+        <script type="text/javascript" src="/js/comm/numberUtils.js?version=1.1"></script>
+        <script type="text/javascript" src="/js/comm/stringUtils.js"></script>
+        <script type="text/javascript" src="/js/comm/fileUtils.js"></script>
+        <script type="text/javascript" src="/js/comm/validationUtils.js"></script>
+        
+        
+        <script type="text/javascript" src="/js/akc.js"></script>
+        <link rel="stylesheet" type="text/css" href="/js/lib/jquery-autocomplete/jquery.autocomplete.css"> <!-- jquery-autocomplete 2016/12/19 -->
+        <script type="text/javascript" src="/js/lib/jquery-autocomplete/jquery-migrate-1.2.1.js"></script> <!-- jquery-autocomplete 2016/12/19 -->
+        <script type="text/javascript" src="/js/lib/jquery-autocomplete/jquery.autocomplete.min.js "></script> <!-- jquery-autocomplete 2016/12/19 -->
+        
+        
+        <script type="text/javascript" src="/js/makePCookie.js"></script> <!-- 웹로그 분석 -->
+        
+        <script type="text/javascript" src="/new_js/printThis/printThis.js"></script>
+        <script type="text/javascript" src="/js/custom-hrdp.js?ver=8"></script>
+        
+        
+        
+        
+        <script type="text/javascript" src="/new_js/lib/daterangepicker.js"></script>
+        
+        
+        <script type="text/javascript">
+            /* 중복로그인 알람 */
+            // 심사위원 OTP
+            
+        
+            
+        
+            /* 우클릭 방지 */
+            document.oncontextmenu = new Function("return false");
+        
+            /*
+            // 소스보기 방지
+            $(document).bind('keydown',function(e) {
+                if (e.keyCode == 123) {
+                    e.preventDefault();
+                    e.returnValue = false;
+                }
+            });
+            */
+        
+            var strUrlArr = $(location).attr("pathname").split("/");
+            var strIdx = strUrlArr.length-1;
+            var strPrgIdArr = strUrlArr[strIdx].split(".");
+            var prgId = strPrgIdArr[0];
+            if(prgId!='PCTGO0100L'){
+                //통합프로그램 설치 페이지는 적용 제외
+                //전체 적용시 아래 주석 해제
+                //document.write("<script type=\"text/javascript\" src=\"" +gfv_contextpath+"/markany/MaWebDRM.js\"></scr"+"ipt>");
+            }
+        
+            /* 사용자 접속환경 체크 */
+            fnCheckUserAgent() ;
+        
+        </script>
+        
+        <script type="text/javascript" src="/js/video_UC.js?ver=1.6"></script>
+        
+        
+        
+        <!-- webDRM -->
+        <!-- 개별 설정시는 각 화면에 아래 주석 코드 붙혀넣기 후 주석 해제 -->
+        
+        
+        
+        <meta name="_csrf_parameter" content="_csrf"><meta name="_csrf_header" content="X-CSRF-TOKEN"><meta name="_csrf" content="bab33bc0-eae8-4e12-bd04-5122492c8e2a">
+        <style>img.ui-datepicker-trigger {margin-bottom: 8px;}</style></head>
+
+<body>
+    <div class="tabSelectWrap">
+        <dl class="tabSelect on">
+            <dt class="title">
+                <label>지역</label>
+            </dt>
+            <dd class="content" data-type="area">
+                <button class="btn" onclick="tabSelectOpen($(this));">지역 선택</button>
+                <div class="boxWrap half">
+                    <div class="box">
+                        <p class="tit">대분류</p>
+                        <div class="listWrap">
+                            <ul class="list" id="areaDept1">
+                                
+                                    <li data-code="00" onclick="clickArea1($(this))" class="on">
+                                        <a href="javascript:void(0)" title="선택됨"><span>전체</span></a>
+                                    </li>
+                                
+                                    <li data-code="11" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>서울</span></a>
+                                    </li>
+                                
+                                    <li data-code="26" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>부산</span></a>
+                                    </li>
+                                
+                                    <li data-code="27" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>대구</span></a>
+                                    </li>
+                                
+                                    <li data-code="28" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>인천</span></a>
+                                    </li>
+                                
+                                    <li data-code="29" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>광주</span></a>
+                                    </li>
+                                
+                                    <li data-code="30" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>대전</span></a>
+                                    </li>
+                                
+                                    <li data-code="31" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>울산</span></a>
+                                    </li>
+                                
+                                    <li data-code="36" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>세종</span></a>
+                                    </li>
+                                
+                                    <li data-code="41" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>경기</span></a>
+                                    </li>
+                                
+                                    <li data-code="42" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>강원</span></a>
+                                    </li>
+                                
+                                    <li data-code="43" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>충북</span></a>
+                                    </li>
+                                
+                                    <li data-code="44" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>충남</span></a>
+                                    </li>
+                                
+                                    <li data-code="45" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>전북</span></a>
+                                    </li>
+                                
+                                    <li data-code="46" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>전남</span></a>
+                                    </li>
+                                
+                                    <li data-code="47" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>경북</span></a>
+                                    </li>
+                                
+                                    <li data-code="48" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>경남</span></a>
+                                    </li>
+                                
+                                    <li data-code="50" onclick="clickArea1($(this))">
+                                        <a href="javascript:void(0)"><span>제주</span></a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    </div>                    
+                    <!-- <div class="box">
+                        <p class="tit">중분류</p>
+                        <div class="listWrap">
+                            <ul class="list" id="areaDept2"><li data-code="00" onclick="clickArea2('00', $(this))" class="on"><a href="javascript:void(0)" title="선택됨"><span>전체</span></a></li></ul>
+                        </div>
+                    </div> -->
+                    <div class="box">
+                        <p class="tit">중분류</p>
+                        <div class="listWrap">
+                            <ul class="list" id="areaDept2"><li data-code="11" onclick="clickArea2('11', $(this))"><a href="javascript:void(0)"><span>전체</span></a></li><li data-code="11680" onclick="clickArea2(11680, $(this))"><a href="javascript:void(0)"><span>강남구</span></a></li><li data-code="11740" onclick="clickArea2(11740, $(this))"><a href="javascript:void(0)"><span>강동구</span></a></li><li data-code="11305" onclick="clickArea2(11305, $(this))"><a href="javascript:void(0)"><span>강북구</span></a></li><li data-code="11500" onclick="clickArea2(11500, $(this))"><a href="javascript:void(0)"><span>강서구</span></a></li><li data-code="11620" onclick="clickArea2(11620, $(this))"><a href="javascript:void(0)"><span>관악구</span></a></li><li data-code="11215" onclick="clickArea2(11215, $(this))"><a href="javascript:void(0)"><span>광진구</span></a></li><li data-code="11530" onclick="clickArea2(11530, $(this))"><a href="javascript:void(0)"><span>구로구</span></a></li><li data-code="11545" onclick="clickArea2(11545, $(this))"><a href="javascript:void(0)"><span>금천구</span></a></li><li data-code="11350" onclick="clickArea2(11350, $(this))"><a href="javascript:void(0)"><span>노원구</span></a></li><li data-code="11320" onclick="clickArea2(11320, $(this))"><a href="javascript:void(0)"><span>도봉구</span></a></li><li data-code="11230" onclick="clickArea2(11230, $(this))"><a href="javascript:void(0)"><span>동대문구</span></a></li><li data-code="11590" onclick="clickArea2(11590, $(this))"><a href="javascript:void(0)"><span>동작구</span></a></li><li data-code="11440" onclick="clickArea2(11440, $(this))"><a href="javascript:void(0)"><span>마포구</span></a></li><li data-code="11410" onclick="clickArea2(11410, $(this))"><a href="javascript:void(0)"><span>서대문구</span></a></li><li data-code="11650" onclick="clickArea2(11650, $(this))"><a href="javascript:void(0)"><span>서초구</span></a></li><li data-code="11200" onclick="clickArea2(11200, $(this))"><a href="javascript:void(0)"><span>성동구</span></a></li><li data-code="11290" onclick="clickArea2(11290, $(this))"><a href="javascript:void(0)"><span>성북구</span></a></li><li data-code="11710" onclick="clickArea2(11710, $(this))"><a href="javascript:void(0)"><span>송파구</span></a></li><li data-code="11470" onclick="clickArea2(11470, $(this))"><a href="javascript:void(0)"><span>양천구</span></a></li><li data-code="11560" onclick="clickArea2(11560, $(this))"><a href="javascript:void(0)"><span>영등포구</span></a></li><li data-code="11170" onclick="clickArea2(11170, $(this))"><a href="javascript:void(0)"><span>용산구</span></a></li><li data-code="11380" onclick="clickArea2(11380, $(this))"><a href="javascript:void(0)"><span>은평구</span></a></li><li data-code="11110" onclick="clickArea2(11110, $(this))"><a href="javascript:void(0)"><span>종로구</span></a></li><li data-code="11140" onclick="clickArea2(11140, $(this))"><a href="javascript:void(0)"><span>중구</span></a></li><li data-code="11260" onclick="clickArea2(11260, $(this))"><a href="javascript:void(0)"><span>중랑구</span></a></li></ul>
+                        </div>
+                    </div>
+                </div>
+            </dd>
+        </dl>      
+       
+
+        
+       
+                                <script>
+                                    $('div[id^="crseTracseSe"]').hide();
+                                    $('#crseTracseSe').show();
+                                    function showCrseTracseSe($this, section) {
+                                        $('dd.content[data-type="crseTracseSe"] div.box:first-child li.on').removeClass('on');
+                                        $this.addClass('on');
+                                        $this.siblings().children('a').removeAttr('title');
+                                        $this.children('a').attr('title', '선택됨');
+                                        $('div[id^="crseTracseSe"]').hide();
+
+                                        $('#crseTracseSe' + section).show();
+                                    }
+                                </script>
+                            
+                            
+                        
+                    
+                          
+    </div>
+    <script type="text/javascript">
+        /* 웹접근성 개선 180511 수정 */
+        function goMyCourse() {
+        // 	$("#myCourseDiv").load("/hrdp/hg/phgho/PHGHO0100P.do", function() {
+            $("#myCourseDiv").load("/hrdp/ma/pmmao/fixesSearchPop.do", function() {
+                $(".layer_container").attr("tabindex", "0");
+                $(".layer_popup").find(".nofocus").remove();
+                $(".layer_popup").prepend('<span class="nofocus" tabindex="0"></span>');
+        
+                $(".layer_container").focus();
+                    
+                $(".nofocus").focus(function(e){
+                    e.preventDefault();
+                    $(".layer_btn_close").focus();
+                })
+        
+                $(document).on("click", ".layer_btn_close", function(e) {				
+                    $(document).find(".js-layer-open").focus();
+                    $(document).find(".js-layer-open").removeClass("js-layer-open");
+                    e.preventDefault();
+                });
+        
+                $(".layer_btn_close").on("keydown", function(e){
+                    var keycode = (e.keyCode ? e.keyCode : e.which);
+                    var $firstElem = $(".layer_popup").find("a, input, select, button, [tabindex='0']:not(.nofocus)").filter(":first");
+        
+                    if(keycode == 9){
+                        e.preventDefault();
+                        $firstElem.focus();
+                    }
+                })
+            });
+        }
+        /* 웹접근성 개선 180511 수정 */
+        
+        function goOnlineGuide() {
+            $("#onlineGuideDiv").load("/hrdp/ma/pmmao/onlineGuidePop.do", function() {
+                $(".layer_container").attr("tabindex", "0");
+                $(".layer_popup").find(".nofocus").remove();
+                $(".layer_popup").prepend('<span class="nofocus" tabindex="0"></span>');
+        
+                $(".layer_container").focus();
+                    
+                $(".nofocus").focus(function(e){
+                    e.preventDefault();
+                    $(".layer_btn_close").focus();
+                })
+        
+                $(document).on("click", ".layer_btn_close", function(e) {				
+                    $(document).find(".js-layer-open").focus();
+                    $(document).find(".js-layer-open").removeClass("js-layer-open");
+                    e.preventDefault();
+                });
+        
+                $(".layer_btn_close").on("keydown", function(e){
+                    var keycode = (e.keyCode ? e.keyCode : e.which);
+                    var $firstElem = $(".layer_popup").find("a, input, select, button, [tabindex='0']:not(.nofocus)").filter(":first");
+        
+                    if(keycode == 9){
+                        e.preventDefault();
+                        $firstElem.focus();
+                    }
+                })
+            });
+        }
+        
+        
+        $(document).ready(function () {
+            $('#bodyNav').click(function () {
+                if($('.lnbArea').length > 0) {
+                    if($('#content').length > 0) {
+                        $(this).attr('href', '#content');
+                    } else if($('.contentArea').length > 0) {
+                        $('.contentArea').attr('id', 'contentArea');
+                        $(this).attr('href', '#contentArea');
+                    } else if($('.subContArea').length > 0) {
+                        $('.subContArea').attr('id', 'subContArea');
+                        $(this).attr('href', '#subContArea');				
+                    }
+                } 
+                // 메뉴미존재
+                else {
+                    $(this).attr('href', '#subContentWrap');
+                }
+            });
+        });
+           
+        
+    $('head').append('<style>img.ui-datepicker-trigger {margin-bottom: 8px;}</style>');
+
+$(document).ready(function(){
+    var goUrl = "/hrdp/ps/ppsgo/PPSGO0100TAjax.do";
+    $.ajax({
+        url : goUrl,
+        dataType : 'json',
+        type:'GET',
+        success : function(data){
+            var result = data.resultList;
+            for(var i = 0; i < result.length; i++) {
+
+                $("." + result[i].tracseId + result[i].tracseTme).addClass("on");
+                $("." + result[i].tracseId + result[i].tracseTme).attr("title","담아두기 선택됨");
+
+            }
+        }
+    });
+});
+function clickArea1($this) {
+    $('#areaDept1 li').removeClass('on');
+    $this.addClass('on');
+    $this.siblings().children('a').removeAttr('title');
+    $this.children('a').attr('title', '선택됨');
+    var area = $this.data('code');
+    $.post('/hrdc/gcod/searchAreaListForTracse.do', {'searchUpperAreaCd':area,'depthNo':2}, function(data) {
+        var areaDept2 = $('#areaDept2');
+        areaDept2.empty();
+        areaDept2.append(  '<li data-code="' + area + '" onclick="clickArea2(\'' + area + '\', $(this))">'
+            + '<a href="javascript:void(0)"><span>전체</span></a>'
+            + '</li>');
+        $.each(data.areaList, function(_, item) {
+            areaDept2.append(  '<li data-code="' + item.areaCd + '" onclick="clickArea2(' + item.areaCd + ', $(this))">'
+                + '<a href="javascript:void(0)"><span>' + item.areaNm + '</span></a>'
+                + '</li>');
+        });
+        $('div.keywordArea ul.list li[data-type="area"]').each(function(_, item) {
+            areaDept2.find('li[data-code="' + $(item).data('code') + '"]').addClass('on');
+            areaDept2.find('li[data-code="' + $(item).data('code') + '"]').siblings().children('a').removeAttr('title');
+            areaDept2.find('li[data-code="' + $(item).data('code') + '"]').children('a').attr('title', '선택됨');
+        });
+    });
+    
+    
+    $('#areaDept2').focus();
+}
+
+function clickArea2(area, $this) {
+    var ul = $('div.keywordArea ul.list');
+    if($this.hasClass('on')) {
+        ul.find('li[data-type="area"][data-code="' + area + '"] button').trigger('click');
+        return;
+    }
+    var searchAll = (area+'').length === 2;
+    if(ul.find('[data-type="area"]').length > 2 && !(searchAll && ul.find('li[data-type="area"][data-code^="' + area + '"]').length > 0) && area != 0) {
+        alert('지역은 3개 까지 선택 가능 합니다.');
+        return;
+    }
+
+    var dataCode;
+    if(searchAll)
+        dataCode = '[data-code^="' + area + '"]';
+    else
+        dataCode = '[data-code="' + (area+'').substring(0,2) + '"]';
+    ul.find('li[data-type="area"]' + dataCode + ' button').trigger('click');
+    
+    if(area == 0){
+        ul.find('li[data-type="area"] button').trigger('click');
+        insertCondition('area', area, '전국 전체'); 
+    } else {
+        ul.find('li[data-type="area"][data-code="00"] button').trigger('click');
+        insertCondition('area', area, $('#areaDept1 li.on').text().trim() + ' ' + $this.text().trim()); 
+    }
+
+    $this.addClass('on');
+    $this.siblings().children('a').removeAttr('title');
+    $this.children('a').attr('title', '선택됨');
+    
+}
+
+function clickCrseTracseSe(event) {
+    var section = event.data.section;
+    var $this = $(this);
+    var ul = $('div.keywordArea ul.list');
+    var code = $this.data('code');
+    var device = "PC";
+    
+    if($this.hasClass('on')) {
+        if (section == '' && code == 'A') {
+        } else {
+            ul.find('li[data-type="crseTracseSe' + section + '"][data-code="' + code + '"] button').trigger('click');
+        }
+        
+
+        return;
+    }
+    $('#crseTracseSe li[data-code="A"]').removeClass('on');
+    ul.find('li[data-type="crseTracseSe"][data-code="A"]').remove();
+    $this.addClass('on');
+    $this.siblings().children('a').removeAttr('title');
+    $this.children('a').attr('title', '선택됨');
+    if(code !== 'A') {
+        $('#crseTracseSe' + section + ' li[data-code="A"]').removeClass('on');
+        ul.find('li[data-type="crseTracseSe' + section + '"][data-code="A"]').remove();
+        insertCondition('crseTracseSe' + section, code, $this.text().trim());
+    } else {
+        if(device != 'PC'){
+            var text = $this.text().trim().substring(0,3);
+        } else {
+            var text = $('dd.content[data-type="crseTracseSe"] div.box:first-child li.on').text().trim();   
+        }
+        
+        if(text.indexOf('전체')>=0)
+            text = '훈련유형';
+        ul.find('li[data-type^="crseTracseSe' + section + '"] button').trigger('click');
+        insertCondition('crseTracseSe' + section, 'A', text + ' 전체');
+    }
+    
+}
+
+function clickNcs(ncs, $this, lvl) {
+    var ul = $('div.keywordArea ul.list');
+    if(lvl > 3 && $this.hasClass('on')) {
+        ul.find('li[data-type="ncs"][data-code="' + ncs + '"] button').trigger('click');
+        return;
+    }
+    if(lvl > 3) {
+        if(ncs.length === 6) {
+            ul.find('li[data-type="ncs"][data-code^="' + ncs + '"] button').trigger('click');
+            insertCondition('ncs', ncs, $('#ncsDept3').find('li.on').text().slice(0,-4) + ' 전체');
+        } else {
+            ul.find('li[data-type="ncs"][data-code="' + ncs.substring(0,6) + '"] button').trigger('click');
+            insertCondition('ncs', ncs, $this.text().slice(0,-4));
+        }
+        ul.find('li[data-type="ncs"][data-code="' + ncs.substring(0,4) + '"] button').trigger('click');
+        articleClose($("#ncsDept1Ul"));
+
+    } else if(lvl > 2 && ncs.length ==4) {
+        ul.find('li[data-type="ncs"][data-code^="' + ncs + '"] button').trigger('click');
+        $('#ncsDept' + lvl + ' li').removeClass('on');
+        if($this.hasClass('on')){
+            return;
+        }
+        $('#ncsDept4' ).empty();
+        insertCondition('ncs', ncs, $('#ncsDept2').find('li.on').text().slice(0,-4) + ' 전체');
+        articleClose($("#ncsDept1Ul"));
+    } else {
+        $('#ncsDept' + lvl + ' li').removeClass('on');
+        $.post('/hrdc/gcod/searchNcsList.do', {'upperNcsCd':ncs,'ncsCdLvl':lvl+1}, function(data) {
+            for(var i=lvl+1; i<=4; i++)
+                $('#ncsDept' + i ).empty();
+            $.each(data.ncsList, function(_, item) {
+                var ncsNm = item.ncsCdNm;
+                // ncsNm = ncsNm.substring(0, ncsNm.indexOf('('));
+                $('#ncsDept' + (lvl + 1)).append(  '<li data-code="' + item.ncsCd + '" onclick="clickNcs(\'' + item.ncsCd + '\',$(this),' + (lvl + 1) + ')">'
+                    + '<a href="javascript:void(0);"><span>' + ncsNm + ' (' + item.ncsCd.slice(-2,item.ncsCd.length) + ')</span></a>'
+                    + '</li>');
+            });
+
+            if(lvl === 3 && ncs.length == 6) {
+                $('#ncsDept4').prepend(  '<li data-code="' + ncs + '" onclick="clickNcs(\'' + ncs + '\',$(this),' + (lvl+1) + ')">'
+                    + '<a href="javascript:void(0);"><span>전체</span></a>'
+                    + '</li>');
+                ul.find('li[data-type="ncs"]').each(function(_, item) {$('#ncsDept4 li[data-code="' + $(item).data('code') + '"]').addClass('on')});
+
+            }
+            
+            if(lvl === 2) {
+                $('#ncsDept3').prepend(  '<li data-code="' + ncs + '" onclick="clickNcs(\'' + ncs + '\',$(this),' + (lvl+1) + ')">'
+                    + '<a href="javascript:void(0);"><span>전체</span></a>'
+                    + '</li>');
+                ul.find('li[data-type="ncs"]').each(function(_, item) {$('#ncsDept3 li[data-code="' + $(item).data('code') + '"]').addClass('on')});
+
+            }
+            
+            
+
+        });
+    }
+    $this.addClass('on');
+    $this.siblings().children('a').removeAttr('title');
+    $this.children('a').attr('title', '선택됨');
+}
+
+/* 통합 검색 > NCS 키워드  검색 관련 추가 */
+
+function initCondition(type, value) {
+    var index = value.indexOf('|');
+    var code = value.substring(0, index);
+    var text = value.substring(index+1);
+    if(type === 'area')
+        $('#areaDept1 li[data-code="' + value.substring(0,2) + '"]').trigger('click');
+    if(type.indexOf('crseTracseSe') == 0) {
+        if(type !== 'crseTracseSe') {
+            var li = $('dd.content[data-type="crseTracseSe"] div.box:first-child li');
+            var idx = type.substr(-1);
+            li.removeClass('on');
+            $(li[idx - 1]).addClass('on');
+            
+            $('#' + type + ' li[data-code="' + code + '"]').trigger('click');
+            $(li[idx - 1]).removeClass('on');
+            $(li[0]).addClass('on');
+
+            $(li[0]).siblings().children('a').removeAttr('title');
+            $(li[0]).children('a').attr('title', '선택됨');
+        } else {
+            $('#' + type + ' li[data-code="' + code + '"]').trigger('click');
+        }
+    }else if(type == 'selectNCSKeyword'){ // 통합 검색 유형(라디오버튼) 클릭 시 이벤트 처리
+        /* 방법 1. 화면이 띄어지기 건 Controller에서 검색 사전 실행 후 데이터를 화면에 시각화 */
+        if(gfn_isNull(value) == true){
+            // 초기화
+            $(".ncsKeywordListBoxWrap").empty();
+            gfn_showLoading();
+            
+            var ncsResultList = new Array();
+            var ncsResultItem = {'job_sdvn':'', 'ablt_unit':''};
+            
+            var ncs_html = "";
+            // 초기값 설정
+            fn_initNCSKeyword();
+            if(gfn_isNull(ncsResultList) == false) {
+…
+
+        </script>
+</body>
+</html>

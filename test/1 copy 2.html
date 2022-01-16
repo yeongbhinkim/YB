@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="http://code.jquery.com/jquery-latest.js"></script> 
+	
+	<style>
+body{
+	margin-top: 100px;
+	font-family: 'Trebuchet MS', serif;
+	line-height: 1.6
+}
+.container{
+	width: 500px;
+	margin: 0 auto;
+}
+
+
+
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul.tabs li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+ul.tabs li.current{
+	background: yellow;
+	color: #222;
+}
+
+.tab-content{
+	display: none;
+	background: yellow;
+	padding: 15px;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+
+		<ul class="tabs">
+			<li class="is_on">
+				<li class="tab-link current" data-tab="tab-1"> 메뉴_하나</li>
+			</li>
+			<li class="tab-link" data-tab="tab-2">메뉴_둘</li>
+			<li class="tab-link" data-tab="tab-3">메뉴_셋</li>
+		</ul>
+	
+		<div class="cont_area">
+			<div id="tab-1" class="tab-content current">
+				---- ---- -------- ---- ---- ---- ---- ---- ---- -------- ---- ---- ---- ---- ---- ---- -------- ---- ---- ---- ---- ---- ---- -------- ---- ---- ---- ---- ---- ---- -------- ---- ---- ---- ---- ---- ---- -------- ---- ---- ---- ----
+			</div>
+			<div id="tab-2" class="tab-content">
+				---- ---- ★------ ---- ---- ---- ---- ---- ---- -------- ---- ---- ---- ---- ---- ---- -------- ---- ---- ---- ★-- ---- ---- ------★ ---- ---- ---- ---- ---- ---- -------- ---- ---- ---- ---- ---- ---- ★------ ---- ---- ---- ----
+			</div>
+			<div id="tab-3" class="tab-content">
+				---- ★-- -------- ---- ---- ---- -★- ---- ---- -------- ---- -★- ---- ---- ---- ---- -------- ---- ---- ---- ---- ---- --★ -------- ★-- ---- ---- ---- ---- ---- -------- ---- ---- --★ ---- ---- ---- -------- ---- ---- ---- --★
+			</div>
+		</div>
+	
+	</div>
+<!-- <script>
+	$(document).ready(function(){
+	
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
+
+})
+</script> -->
+<script>
+	const tabList = document.querySelectorAll('.container .tabs li');
+	const contents = document.querySelectorAll('.container .cont_area .tab-content')
+	let activeCont = ''; // 현재 활성화 된 컨텐츠 (기본:#tab1 활성화)
+  
+	for(var i = 0; i < tabList.length; i++){
+	  tabList[i].querySelector('.tab-link').addEventListener('click', function(e){
+		e.preventDefault();
+		for(var j = 0; j < tabList.length; j++){
+		  // 나머지 버튼 클래스 제거
+		  tabList[j].classList.remove('is_on');
+  
+		  // 나머지 컨텐츠 display:none 처리
+		  contents[j].style.display = 'none';
+		}
+  
+		// 버튼 관련 이벤트
+		this.parentNode.classList.add('is_on');
+  
+		// 버튼 클릭시 컨텐츠 전환
+		activeCont = this.getAttribute('data-tab');
+		document.querySelector(activeCont).style.display = 'block';
+	  });
+	}
+  </script>
+	
+</body>
+</html>
